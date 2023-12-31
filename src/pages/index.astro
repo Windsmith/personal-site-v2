@@ -1,5 +1,6 @@
 ---
-
+import SkillBlob from "../components/SkillBlob.astro";
+import ProjectDisplay from "../components/ProjectDisplay.astro";
 ---
 
 <html lang="en">
@@ -26,6 +27,46 @@
 			</div>
 			<!--turn into floating arrow-->
 			<div class="text-4xl">v</div>
+		</div>
+
+		<div
+			class="h-screen w-screen border-4 border-blue-900 flex justify-evenly p-10"
+		>
+			<div class="border-4 border-blue-900">
+				<div class="text-5xl">My Technical Expertise</div>
+				<div>
+					I have experience with full-stack web development, mobile
+					app development, and game development.
+				</div>
+				<div>
+					I’m currently exploring machine learning using python and
+					low level programming using rust in my free time.
+				</div>
+				<div class="flex">
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+					<SkillBlob skill="React" />
+				</div>
+			</div>
+			<div class="border-4 border-blue-900">
+				<div class="text-5xl">Projects</div>
+				<div>
+					<ProjectDisplay />
+					<ProjectDisplay />
+					<ProjectDisplay />
+					<ProjectDisplay />
+				</div>
+				<div>View resume</div>
+			</div>
 		</div>
 	</body>
 </html>
