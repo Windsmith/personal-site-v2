@@ -1,6 +1,7 @@
 ---
 import SkillBlob from "../components/SkillBlob.astro";
 import ProjectDisplay from "../components/ProjectDisplay.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -29,7 +30,8 @@ import ProjectDisplay from "../components/ProjectDisplay.astro";
 			<div class="text-4xl">v</div>
 		</div>
 
-		<div class="h-screen w-screen border-4 border-blue-900 flex p-10">
+		<Navbar />
+		<div class="h-screen w-screen flex p-10">
 			<div class="w-3/5 space-y-8 px-8">
 				<div class="text-5xl">My Technical Expertise</div>
 				<div class="text-2xl">
@@ -57,7 +59,7 @@ import ProjectDisplay from "../components/ProjectDisplay.astro";
 				</div>
 			</div>
 			<div class="w-2/5">
-				<div class="text-5xl">Projects</div>
+				<div class="text-4xl">Projects</div>
 				<div>
 					<ProjectDisplay />
 					<ProjectDisplay />
