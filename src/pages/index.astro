@@ -22,27 +22,26 @@ import ProjectDisplay from "../components/ProjectDisplay.astro";
 				technical problems through code
 			</div>
 			<div class="text-4xl">
-				I also write fictional stories and blog posts about whatever is
-				going on in my life
+				I also write stories and blog posts about whatever is going on
+				in my life
 			</div>
 			<!--turn into floating arrow-->
 			<div class="text-4xl">v</div>
 		</div>
 
-		<div
-			class="h-screen w-screen border-4 border-blue-900 flex justify-evenly p-10"
-		>
-			<div class="border-4 border-blue-900">
+		<div class="h-screen w-screen border-4 border-blue-900 flex p-10">
+			<div class="w-3/5 space-y-8 px-8">
 				<div class="text-5xl">My Technical Expertise</div>
-				<div>
+				<div class="text-2xl">
 					I have experience with full-stack web development, mobile
 					app development, and game development.
 				</div>
-				<div>
+				<div class="text-2xl">
 					I’m currently exploring machine learning using python and
 					low level programming using rust in my free time.
 				</div>
-				<div class="flex">
+				<div class="text-4xl">My Skills</div>
+				<div class="flex flex-wrap w-5/6">
 					<SkillBlob skill="React" />
 					<SkillBlob skill="React" />
 					<SkillBlob skill="React" />
@@ -57,7 +56,7 @@ import ProjectDisplay from "../components/ProjectDisplay.astro";
 					<SkillBlob skill="React" />
 				</div>
 			</div>
-			<div class="border-4 border-blue-900">
+			<div class="w-2/5">
 				<div class="text-5xl">Projects</div>
 				<div>
 					<ProjectDisplay />
@@ -65,7 +64,6 @@ import ProjectDisplay from "../components/ProjectDisplay.astro";
 					<ProjectDisplay />
 					<ProjectDisplay />
 				</div>
-				<div>View resume</div>
 			</div>
 		</div>
 	</body>
