@@ -2,6 +2,8 @@
 import SkillBlob from "../components/SkillBlob.astro";
 import ProjectDisplay from "../components/ProjectDisplay.astro";
 import Navbar from "../components/Navbar.astro";
+import BlogPostDisplay from "../components/BlogPostDisplay.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -14,7 +16,7 @@ import Navbar from "../components/Navbar.astro";
 	</head>
 	<body>
 		<div
-			class="h-screen w-screen border-4 border-red-900 text-center flex flex-col justify-center items-center space-y-8 px-96"
+			class="h-screen w-screen text-center flex flex-col justify-center items-center space-y-8 px-96"
 		>
 			<div class="text-4xl">Hi There!</div>
 			<div class="text-6xl">I'm Shriram</div>
@@ -68,5 +70,49 @@ import Navbar from "../components/Navbar.astro";
 				</div>
 			</div>
 		</div>
+
+		<div class="h-screen w-screen flex p-10">
+			<div class="w-3/5 space-y-10 px-8">
+				<div class="text-5xl">My Non-Technical Expertise</div>
+				<div class="text-3xl">
+					Apart from programming, I spend my time playing guitar,
+					writing, and enjoying the present moment with video games,
+					anime, books, or meditation.
+				</div>
+				<div class="text-3xl">
+					I primarily write about my experience with life, mental
+					health, philosophy, and spirituality.
+				</div>
+				<div class="text-3xl">
+					I also write fictional short stories from time to time.
+				</div>
+				<div class="text-3xl">
+					Have a look through my blog. Maybe you’ll find something
+					interesting :)
+				</div>
+			</div>
+			<div class="w-2/5">
+				<div class="text-4xl">Recent Posts</div>
+				<div>
+					<BlogPostDisplay />
+					<BlogPostDisplay />
+					<BlogPostDisplay />
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="h-screen w-screen text-center flex flex-col justify-center items-center space-y-8 px-96"
+		>
+			<div class="text-4xl">Contact!</div>
+			<div class="text-5xl">Let's be awesome together!</div>
+			<div class="text-4xl">
+				As a dev, I am driven by my love for coding and my desire for
+				new challenges. If you have opportunities for collaboration or
+				want to build something amazing, don't hesitate to contact me!
+			</div>
+			<div class="text-2xl">Get in touch!</div>
+		</div>
+		<Footer />
 	</body>
 </html>
