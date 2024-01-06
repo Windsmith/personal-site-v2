@@ -2,20 +2,17 @@
 import Navbar from "../components/Navbar.astro";
 import BlogPreview from "../components/BlogPreview.astro";
 import Footer from "../components/Footer.astro";
+
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
 ---
 
 <Navbar />
 
 <div class="w-3/6 center mx-auto space-y-6 my-10">
     <div class="text-4xl" id="top">Recent Posts</div>
-
-    <BlogPreview />
-    <BlogPreview />
-    <BlogPreview />
-
-    <BlogPreview />
-    <BlogPreview />
-    <BlogPreview />
+    {allPosts.map((post) => <BlogPreview />)}
 </div>
 
 <a href="#top" class="rounded-2xl p-5 bg-green-700 sticky right-0 bottom-0">^</a
